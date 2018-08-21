@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.asd.heaterproject">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".LauncherActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/google_maps_key" />
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+
+        <activity
+            android:name=".MapsActivity"
+            android:label="@string/title_activity_maps">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <service
+            android:name=".NotificationService"
+            android:enabled="true"></service>
+
+        <receiver
+            android:name=".RestartBroadcastReceiver"
+            android:enabled="true"
+            android:exported="true"
+            android:label="RestartNotificationServiceWhenStopped">
+            <intent-filter>
+                <action android:name="com.example.asd.ActivityRecognition.RestartNotifications" />
+            </intent-filter>
+        </receiver>
+
+        <activity android:name=".EnvironmentActivity" />
+        <activity android:name=".Indoors" />
+        <activity android:name=".Hiking" />
+        <activity android:name=".Graph" />
+        <activity android:name=".Distance" />
+        <activity android:name=".MainActivity" />
+        <activity
+            android:name=".Option"
+            android:label="@string/title_activity_option"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
+    </application>
+
+</manifest>

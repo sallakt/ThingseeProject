@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="30dp"
+        android:text="Options"/>
+
+    <android.support.v7.widget.AppCompatAutoCompleteTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Notify me if" />
+
+    <CheckBox
+        android:id="@+id/indoorExceedsOutdoor"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:text="Indoor temperature exceeds outdoor temperature by less than 5 °C in cold months"
+        android:onClick="OnCheckBoxClicked"/>
+
+    <CheckBox
+        android:id="@+id/humidExceeds"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Indoor humidity exceeds 50%"
+        android:onClick="OnCheckBoxClicked"/>
+
+    <CheckBox
+        android:id="@+id/temperatureExceeds"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Temperature exceeds 60oC"
+        android:onClick="OnCheckBoxClicked"
+        />
+
+    <CheckBox
+        android:id="@+id/locationChange"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="OnCheckBoxClicked"
+        android:text="Thingsee Device Location changes" />
+
+    <Button
+        android:id="@+id/optionBack"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Back" />
+
+</LinearLayout>

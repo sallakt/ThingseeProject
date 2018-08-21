@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:id="@+id/activity_main"
+    tools:context="com.example.asd.heaterproject"
+    android:orientation="vertical"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@color/hikingBackground4">
+
+    <Button android:id="@+id/mybutton"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:text="@string/Request_button"
+        android:textSize="12sp"
+        android:layout_gravity="center"
+        android:padding="15sp"
+        android:background="@drawable/rounded0"
+        android:textColor="@color/hikingTextColor"
+        android:backgroundTint="@color/cast_expanded_controller_text_color"/>
+
+    <ListView
+        android:id="@+id/mylist"
+        android:layout_width="wrap_content"
+        android:layout_height="325dp"
+        android:textColor="@color/hikingTextColor" />
+
+    <Button android:id="@+id/main_back_button"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:text="@string/back"
+        android:textSize="12sp"
+        android:layout_gravity="center"
+        android:padding="15sp"
+        android:background="@drawable/rounded0"
+        android:textColor="@color/hikingTextColor"
+        android:backgroundTint="@color/cast_expanded_controller_text_color"/>
+
+</LinearLayout>

@@ -1,0 +1,45 @@
+<resources>
+    <string name="app_name">In &amp; Out</string>
+    <string name="prompt">No credentials set, give Thingsee username and password</string>
+    <string name="info_prompt">Invalid username/password or no connection to Thingsee, give Thingsee username and password</string>
+    <string name="no_connection">No connection to Thingsee</string>
+
+    <string name="sontrasButton">Go to Sontra\'s test activity</string>
+    <string name="goBackButton">Main Menu</string>
+    <string name="openMapButton">Open Map</string>
+    <string name="optionsButton">Options</string>
+    <string name="title_activity_maps">Map of Thingsee Device Location</string>
+
+
+    <string name="back">BACK</string>
+
+    <string name="mainButton">Request Data</string>
+    <string name="batteryButton">Battery</string>
+    <string name="environmentButton">App Info</string>
+    <string name="graphButton">Altitude Graph</string>
+    <string name="distanceResult">Distance Tracker</string>
+    <string name="inputText"></string>
+    <string name="inputLoc">address, </string>
+    <string name="distanceResultCalc">enter address to see distance</string>
+    <string name="locationIntro">The current longitude/latitude and address:</string>
+    <string name="locationText">location</string>
+    <string name="addressText">Address: </string>
+
+
+    <string name="battery"></string>
+
+    <string name="Request_button">Request data from Thingsee server</string>
+
+
+    <string name="appDescription1">In this application, you are able to check the various altitudes of which you have reached
+        during your hike, the distance you have travelled from home, and the status of the battery.</string>
+    <string name="appDescription2">Please note that while the Distance
+        Tracker does not provide direction, it is to be used as an emergency tool in the case that you become lost and need to
+        know your address/coordinates as well as the amount of kilometers you are from your designated home location.</string>
+    <string name="appDescription3">We are aware that this app needs improvement. While this may only be the prototype stage,
+        we hope in the future that the application can be further developed into a useful, versatile tool. Thank you for
+        downloading!</string>
+    <string name="infoIntro">Welcome to the Hiking portion of this application</string>
+    <string name="title_activity_option">Option</string>
+
+</resources>

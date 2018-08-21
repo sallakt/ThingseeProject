@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/bg_4"
+    >
+
+    <ProgressBar
+        android:id="@+id/batteryBar"
+        android:layout_width="301dp"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/introText"
+        android:layout_alignStart="@+id/request_button"
+        android:layout_marginBottom="-114dp"
+        style="@android:style/Widget.ProgressBar.Horizontal"
+        android:progress="30"
+        android:foregroundTint="@color/white"
+
+        android:indeterminate="false"
+        android:indeterminateTint="@color/wallet_holo_blue_light"
+        android:indeterminateTintMode="src_in"/>
+    <Button
+        android:id="@+id/request_button"
+        android:layout_width="304dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignStart="@+id/introText"
+        android:layout_marginBottom="214dp"
+        android:text="@string/Request_button" />
+
+    <TextView
+        android:id="@+id/introText"
+        android:layout_width="302dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="114dp"
+        android:background="@color/white"
+        android:backgroundTint="@color/hikingBackground0"
+        android:fontFamily="sans-serif"
+        android:padding="16dp"
+        android:text="@string/app_name"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:typeface="sans"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/indoorsButton"
+        android:layout_width="130dp"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignStart="@+id/introText"
+        android:layout_gravity="center"
+        android:layout_marginBottom="146dp"
+        android:adjustViewBounds="false"
+        android:background="@drawable/rounded0"
+        android:drawableLeft="@drawable/cottage"
+        android:drawablePadding="@dimen/activity_vertical_margin"
+        android:gravity="center"
+        android:paddingBottom="16dp"
+        android:paddingLeft="6dp"
+        android:paddingRight="10dp"
+        android:paddingTop="16dp"
+        android:text="Indoors"
+        android:textSize="15dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.109"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/introText" />
+
+    <Button
+        android:id="@+id/hikingButton"
+        android:layout_width="130dp"
+        android:layout_height="60dp"
+        android:layout_alignEnd="@+id/introText"
+        android:layout_alignTop="@+id/indoorsButton"
+        android:layout_gravity="center"
+        android:adjustViewBounds="false"
+        android:background="@drawable/rounded0"
+        android:drawableLeft="@drawable/hiking"
+        android:paddingBottom="16dp"
+        android:paddingLeft="6dp"
+        android:paddingTop="16dp"
+        android:text="Hiking"
+        android:textSize="15dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.831"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/indoorsButton" />
+
+    <TextView
+        android:id="@+id/batteryButton"
+        android:layout_width="wrap_content"
+        android:layout_height="49dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true"
+        android:layout_gravity="center"
+        android:adjustViewBounds="false"
+        android:drawableLeft="@drawable/battery"
+        android:drawablePadding="@dimen/activity_vertical_margin"
+        android:gravity="center"
+        android:paddingBottom="16dp"
+        android:paddingLeft="6dp"
+        android:paddingRight="23dp"
+        android:paddingTop="16dp"
+        android:text="@string/batteryButton"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/hikingButton" />
+
+
+
+
+</RelativeLayout>
